@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebPrestataire — Création de sites</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">WebPrestataire</a>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tarifs.html">Tarifs</a></li>
+        <li><a href="mini-entreprise.html">Mini-entreprise</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>Création de sites one-page pour mini-entreprises</h1>
+      <p>Site clé en main, responsive et simple à gérer.</p>
+      <a class="btn primary" href="tarifs.html">Voir les offres</a>
+    </div>
+  </section>
+
+  <section id="services" class="container">
+    <h2>Prestations</h2>
+    <ul>
+      <li>One-page pour mini-entreprises</li>
+      <li>Page supplémentaire tarifs / produits</li>
+      <li>Formation rapide GitHub / CodePen</li>
+    </ul>
+  </section>
+
+  <section id="portfolio" class="container">
+    <h2>Exemples</h2>
+    <img src="img/placeholder.png" alt="Exemple projet">
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <form action="#" method="post">
+      <label>Nom : <input type="text" name="name" required></label>
+      <label>Email : <input type="email" name="email" required></label>
+      <label>Message : <textarea name="message" rows="4" required></textarea></label>
+      <button type="submit" class="btn primary">Envoyer</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> WebPrestataire</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
