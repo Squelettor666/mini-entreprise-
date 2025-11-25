@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarifs — WebPrestataire</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">WebPrestataire</a>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tarifs.html" aria-current="page">Tarifs</a></li>
+        <li><a href="mini-entreprise.html">Mini-entreprise</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Tarifs & Prestations</h1>
+  <ul>
+    <li>Pack Starter — 80€ : One-page simple</li>
+    <li>Pack Standard — 140€ : One-page + page Tarifs</li>
+    <li>Pack Pro — 240€ : Multi-pages, support et formation</li>
+  </ul>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year2"></span> WebPrestataire</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year2').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
