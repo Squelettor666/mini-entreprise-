@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini-Entreprise — Exemple</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="mini-entreprise.html">MiniEntreprise</a>
+    <nav>
+      <ul class="nav">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#product">Produit</a></li>
+        <li><a href="#team">Équipe</a></li>
+        <li><a href="#order">Commander</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="about" class="container">
+    <h2>À propos</h2>
+    <p>Présentation de la mini-entreprise et de l'idée du projet.</p>
+  </section>
+
+  <section id="product" class="container">
+    <h2>Produit</h2>
+    <img src="img/placeholder.png" alt="Produit">
+  </section>
+
+  <section id="team" class="container">
+    <h2>Équipe</h2>
+    <ul>
+      <li>Alex — Responsable commercial</li>
+      <li>Sam — Responsable produit</li>
+      <li>Rania — Trésorerie</li>
+    </ul>
+  </section>
+
+  <section id="order" class="container">
+    <h2>Commander</h2>
+    <form action="#" method="post">
+      <label>Nom : <input type="text" name="customer"></label>
+      <label>Produit : 
+        <select name="product">
+          <option>Produit A</option>
+          <option>Produit B</option>
+        </select>
+      </label>
+      <label>Quantité : <input type="number" name="qty" value="1"></label>
+      <button type="submit" class="btn primary">Envoyer</button>
+    </form>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Email : <a href="mailto:mini@example.com">mini@example.com</a></p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year3"></span> MiniEntreprise</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year3').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
